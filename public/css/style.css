@@ -23,6 +23,7 @@
     min-height: 700px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     color: white;
+    overflow: hidden;
   }
   
   .left-section {
@@ -63,22 +64,21 @@
   }
   
   .right-section {
-    background-color: #13243b;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 60px 50px 0 50px;
   }
   
   .top-row {
+    background-color: #13243b;
     display: grid;
     grid-template-columns: 1fr 260px;
     gap: 40px;
-    margin-bottom: 20px;
+    padding: 60px 50px 20px;
   }
   
   .about-section .section-title {
-    color: #f7c948;
+    color: #d47e48;
     font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -135,11 +135,14 @@
   
   .bottom-section {
     background-color: #0e1a2b;
-    padding: 30px 50px 50px 50px;
+  }
+  
+  .content-grid-wrapper {
+    padding: 30px 50px 50px;
   }
   
   .section-title {
-    color: #f7c948;
+    color: #d47e48;
     font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -176,7 +179,6 @@
     top: 0;
   }
   
-  /* Responsive Tweaks */
   @media (max-width: 1024px) {
     .persona-card {
       grid-template-columns: 1fr;
@@ -184,6 +186,7 @@
   
     .top-row {
       grid-template-columns: 1fr;
+      padding: 40px;
     }
   
     .content-grid {
@@ -203,5 +206,9 @@
   
     .tagline {
       margin-bottom: 1rem;
+    }
+  
+    .content-grid-wrapper {
+      padding: 30px 30px 50px;
     }
   }
