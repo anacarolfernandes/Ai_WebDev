@@ -63,21 +63,18 @@
   }
   
   .right-section {
+    background-color: #13243b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 60px 50px 0 50px;
-    background-color: #13243b; /* lighter navy top */
-  }
-  
-  .bottom-section {
-    margin-top: 40px;
-    padding: 50px 0 0;
-    background-color: #0e1a2b; /* darker navy bottom */
   }
   
   .top-row {
     display: grid;
     grid-template-columns: 1fr 260px;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
   .about-section .section-title {
@@ -136,6 +133,11 @@
     background-color: #27ae60;
   }
   
+  .bottom-section {
+    background-color: #0e1a2b;
+    padding: 30px 50px 50px 50px;
+  }
+  
   .section-title {
     color: #f7c948;
     font-size: 0.9rem;
@@ -149,7 +151,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 50px;
-    padding: 0 50px 50px;
   }
   
   .content-list {
