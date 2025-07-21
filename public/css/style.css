@@ -6,7 +6,7 @@
   
   body {
     font-family: 'Segoe UI', Roboto, sans-serif;
-    background-color: #0e1a2b;
+    background-color: #4b5460;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -27,7 +27,6 @@
   
   .left-section {
     position: relative;
-    padding: 0;
     background-color: #000;
     display: flex;
     flex-direction: column;
@@ -39,7 +38,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 0; /* Remove circle */
+    border-radius: 0;
   }
   
   .name {
@@ -64,8 +63,14 @@
   }
   
   .right-section {
-    padding: 60px 50px;
-    background-color: #0e1a2b;
+    padding: 60px 50px 0 50px;
+    background-color: #13243b; /* lighter navy top */
+  }
+  
+  .bottom-section {
+    margin-top: 40px;
+    padding: 50px 0 0;
+    background-color: #0e1a2b; /* darker navy bottom */
   }
   
   .top-row {
@@ -144,6 +149,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 50px;
+    padding: 0 50px 50px;
   }
   
   .content-list {
@@ -162,16 +168,11 @@
   
   .content-list li::before {
     content: '●';
-    color: #c7f464; /* changed to match lime-green bullets */
+    color: #c7f464;
     font-size: 0.8rem;
     position: absolute;
     left: 0;
     top: 0;
-  }
-  
-  .goals-section {
-    grid-column: 1 / -1;
-    margin-bottom: 0;
   }
   
   /* Responsive Tweaks */
